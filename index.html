@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="api.css">
+    <link rel="stylesheet" href="fontawesome.min.css">
+    <link rel="stylesheet" href="apiqueries.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    
+    
+</head>
+<body>
+    <!-- Header start -->
+     
+    <div class="container">
+        <div class="card">
+            <h2><ion-icon name="location-sharp"></ion-icon><span id="location"></span></h2>
+            <h6 id="weather"></h6>
+            <h4><span id="temp"></span><sup>o</sup>C</h4>
+            <img src="" id="icon">
+           
+            <p id="humidity"></p>
+            <p id="wind"></p>
+           
+            <button onclick="window.location.reload()" class="refresh"><i class="fa fa-refresh"></i></button>
+        </div>
+    </div>
+    
+</body>
+<!-- added scripts for functioning -->
+<script src="all.js"></script>
+
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script>
+    link="https://api.openweathermap.org/data/2.5/weather?q=Mumbai&appid=eb448f802149539af96d4ffe6f7bee4e" </script>
+    
+<script src="script.js"></script>
+
+</html>
