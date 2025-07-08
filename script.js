@@ -1,4 +1,6 @@
-var request= new XMLHttpRequest();
+     link="https://api.openweathermap.org/data/2.5/weather?q=Mumbai&appid=eb448f802149539af96d4ffe6f7bee4e"
+
+   var request= new XMLHttpRequest();
     request.open('GET', link , true);
     request.onload=function(){
        var obj=JSON.parse(this.response)
